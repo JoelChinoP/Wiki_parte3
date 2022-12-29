@@ -3,23 +3,24 @@
 }
 
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: Arial;
   padding: 10px;
   background: #f1f1f1;
 }
 
 .header {
   background-color: white;
-  text-align: left;
-  padding: 5px;
+  text-align: center;
+  padding: 20px;
 }
 
+/* The navbar container */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
+/* Navbar links */
 .topnav p {
   float: left;
   display: block;
@@ -29,44 +30,50 @@ body {
   text-decoration: none;
 }
 
+/* Links - change color on hover */
 .topnav p:hover {
   background-color: #ddd;
   color: black;
 }
 
-.leftcolumn {
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
   float: left;
-  width: 50%;
+  width: 75%;
 }
 
+/* Right column */
 .rightcolumn {
   float: left;
-  width: 50%;
+  width: 25%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
 
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  height:100px;
+}
+
+/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
-  margin-top: auto;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
 
-img {
-  width: 70%;
-  height: 23rem;
-  display: block;
-  margin: 0 auto;
-}
-
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
+/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
@@ -75,7 +82,7 @@ img {
   overflow: hidden;
 }
 
-.rightAlign {
+.rightAlign{
   float: right;
 }
 
@@ -105,7 +112,7 @@ img {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: indigo;
+  background: #4caf50;
   width: 100%;
   border: 0;
   padding: 15px;
@@ -118,29 +125,30 @@ img {
 .form input[type="submit"]:hover,
 .form input[type="submit"]:active,
 .form input[type="submit"]:focus {
-  background: #07477c;
+  background: #43a047;
 }
 
 .buttonMini {
-  border-radius: 10px;
-  background-color: #1ab188;
-  width: 120px;
-  height: 30px;
-  font-size: 12px;
-  font-weight: bold;
+    border-radius: 10px;
+    background-color: #1ab188;
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
+  .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
 }
-.owner {
-  color: chartreuse;
+.owner{
+  color: green;
 }
 
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
