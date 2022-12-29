@@ -3,24 +3,23 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 10px;
   background: #f1f1f1;
 }
 
 .header {
   background-color: white;
-  text-align: center;
-  padding: 20px;
+  text-align: left;
+  padding: 5px;
 }
 
-/* The navbar container */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Navbar links */
 .topnav p {
   float: left;
   display: block;
@@ -30,20 +29,16 @@ body {
   text-decoration: none;
 }
 
-/* Links - change color on hover */
 .topnav p:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftcolumn {
   float: left;
   width: 75%;
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
   width: 25%;
@@ -59,21 +54,18 @@ body {
   height: 100px;
 }
 
-/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
@@ -137,7 +129,6 @@ body {
   font-weight: bold;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn,
   .rightcolumn {
@@ -149,7 +140,6 @@ body {
   color: green;
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
