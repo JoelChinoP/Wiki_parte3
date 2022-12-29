@@ -4,14 +4,14 @@ var userKey = "";
 window.addEventListener("load", showWelcome);
 function showWelcome() {
   let html = "<h2>Bienvenido " + userFullName + "</h2>\n";
-  html += `
-          <p>El sistema fué desarrollado usando estas tecnologías:</p>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Perl</li>
-            <li>MariaDB</li>
-            <li>Javascript</li>
+  html += `<br>
+          <p>El sistema fue desarrollado usando estas tecnologías:</p> <br>
+          <ul> 
+            <li>HTML</li> <br>
+            <li>CSS</li> <br>
+            <li>Perl</li> <br>
+            <li>MariaDB</li> <br>
+            <li>Javascript</li> <br>
           </ul>`;
   document.getElementById("main").innerHTML = html;
 }
@@ -28,8 +28,8 @@ function showLogin() {
   let html = `<link rel="stylesheet" type="text/css" href="css/myStyle.css">
   <h1>Login</h1>
   <div class="form">
-    <input placeholder="Usuario" type='text' id='user' name='user'>
-    <input placeholder="Contraseña" type='password' id='password' name='password'>
+    <input placeholder="Usuario" type='text' id='user' name='user' required>
+    <input placeholder="Contraseña" type='password' id='password' name='password' required>
     <br>
     <input type="submit" value="Ingresar" onclick="doLogin()">
   </div>
@@ -88,11 +88,11 @@ function showCreateAccount() {
   let html = `<link rel="stylesheet" type="text/css" href="css/myStyle.css">
   <h1>Registro</h1>
   <div class="form">
-    <input placeholder="Usuario" type='text' id='user' name='user'>
-    <input placeholder="Contraseña" type='password' id='password' name='password'>
-    <input placeholder="Nombre" type='text' id='first' name='first'>
-    <input placeholder="Apellido" type='text' id='last' name='last'>
-    <input type='submit' value='Registrarse' onclick="doCreateAccount()">
+    <input placeholder="Usuario" type='text' id='user' name='user' required>
+    <input placeholder="Contraseña" type='password' id='password' name='password' required>
+    <input placeholder="Nombre" type='text' id='first' name='first' required>
+    <input placeholder="Apellido" type='text' id='last' name='last' required>
+    <input type='submit' value='Registrarse' onclick="doCreateAccount()" required>
   </div>
   <div class="card" id="error">
   </div>`;
