@@ -4,7 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/myStyle.css" />
+    <script src="js/main.js"></script>
+    <script src="js/myScript.js"></script>
+    <title>Wiki</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <h1>Proyecto Final</h1>
+      <h2>Mi Wikipedia</h2>
+    </div>
+    <div id="menu" class="topnav">
+      <p onclick="showWelcome()">Inicio</p>
+      <p onclick="showLogin()">Identificarse</p>
+      <p onclick="showCreateAccount()" class="rightAlign">Crear Cuenta</p>
+    </div>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card" id="main"></div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <div class="fakeimg">Mi Foto</div>
+          <p>
+            Aquí encontrarás, mis artículos sobre los temás que más me gustan
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>El contenido de esta página tiene licencia GNU</p>
+      <p class="owner" id="userName" class="rightAlign"></p>
+    </div>
+  </body>
 </html>
